@@ -28,7 +28,45 @@
 // "" => false
 // "vikas" => true
 
-let someNumber = 33;
-let stringNumber = String(someNumber);
-console.log(stringNumber)
-console.log(typeof stringNumber)
+// let someNumber = 33;
+// let stringNumber = String(someNumber);
+// console.log(stringNumber)
+// console.log(typeof stringNumber)
+
+
+
+// ************************ operations **********************
+let value = 3;
+let negValue = -value;
+// console.log(negValue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2**3)
+// console.log(2%3)
+
+let str1 = "hello ";
+let str2 = "vikas";
+let str3 = str1+str2;
+// console.log(str3)
+// console.log ("1" + 2)
+// console.log (1 + "2")
+// console.log ("1" + 2 +2)
+// console.log (2 +2 + "2")
+// console.log((3+4)*5%3)
+
+// console.log(true)  // gives true
+// console.log(+true) // gives 1
+// console.log(true+) // gives error
+// console.log(+"");  // gives 0
+
+// let num1, num2, num3 
+// num1 = num2 = num3 = 2+2;
+// console.log(num3)
+
+let gameCounter = 100;
+// gameCounter++; //prefix operator
+// ++gameCounter; //postfix operator
+console.log(++gameCounter);
