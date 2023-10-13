@@ -28,8 +28,36 @@ let obj = {
     age : 23
 }
 
-function funName(){}
-const fun = function(){
-    console.log("helloworld")
+// function funName(){}
+// const fun = function(){
+//     console.log("helloworld")
+// }
+// console.log(typeof fun)
+
+
+
+// *****************************************
+
+// Stack(primitive), Heap (Non - primitive)
+
+let myYoutubeName = "vikasjangid"
+
+let anothername = myYoutubeName
+
+anothername = "chaiaurcode"
+
+// console.log(anothername)
+// console.log(myYoutubeName)
+
+
+let userOne  = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
 }
-console.log(typeof fun)
+
+let userTwo = userOne
+
+userTwo.email = "abc@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
