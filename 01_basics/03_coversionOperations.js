@@ -67,6 +67,6 @@ let str3 = str1+str2;
 // console.log(num3)
 
 let gameCounter = 100;
-// gameCounter++; //prefix operator
-// ++gameCounter; //postfix operator
+// gameCounter++; //postfix operator
+// ++gameCounter; //prefix operator
 console.log(++gameCounter);
