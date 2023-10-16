@@ -2,11 +2,11 @@ const marvelHeroes = ["thor","Ironman","spiderman"];
 const dcHeroes = ["superman","flash","batman"];
 
 
-// marvelHeroes.push(dcHeroes)  // when you push the hole array to new array then it will add as a single element on next index in new array
+marvelHeroes.push(dcHeroes)  // when you push the hole array to new array then it will add as a single element on next index in new array
 // console.log(marvelHeroes)
 // console.log(marvelHeroes[3][1])
 
-// const allHeroes = marvelHeroes.concat(dcHeroes) // when you concat the element to new array then it will add new element in old array and returns into new array and it takes only single parameter
+const allHeroes = marvelHeroes.concat(dcHeroes) // when you concat the element to new array then it will add new element in old array and returns into new array and it takes only single parameter
 // console.log(allHeroes)
 
 //spread operator
