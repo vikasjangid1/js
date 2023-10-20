@@ -33,26 +33,26 @@
 //     console.log(`Value of i is ${i}`)
 // }
 
-for (let i = 1; i <= 20; i++) {
-  if (i === 5) {
-    console.log(`Detected 5`);
-    continue;
-  }
-  console.log(`Value of i is ${i}`);
-}
+// for (let i = 1; i <= 20; i++) {
+//   if (i === 5) {
+//     console.log(`Detected 5`);
+//     continue;
+//   }
+//   console.log(`Value of i is ${i}`);
+// }
 
 let array = [];
+let ind = 0;
 let array2 = [];
 
-for (let k = 1; k < 10; k++) {
-    for (let i = 0; i < 3; i++) {
-        array[i] = [];
-        for (let j = 0; j < 3; j++) {
-            array2[j] = k;
-            break;
-        }
+for (let i = 0; i < 3; i++) {
+  array[i] = [];
+    for (let j = 0; j < 3; j++) {
+      array2[j] =  j+ind+1;
     }
-    array[i] = array2;
+  array[i] = array2;
+  ind = ind + 3;
 }
 console.log(array);
-// [[1,2,3],[4,5,6],[7,8,9]]
+// [[1,2,3],[4,5,6],[7,8,9]] 
+
