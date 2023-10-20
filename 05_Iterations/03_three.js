@@ -1,4 +1,6 @@
 // for of loop 
+// ["","",""]
+// [{},{},{}]
 // for of loop print the direct value of an object or array
 const arr = [1,2,3,4,5];
 
