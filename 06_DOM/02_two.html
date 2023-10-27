@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#212121; color:#fff ;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children[1].innerHTML)
+    //  here we are accessing the .parent class's , children's innerhtml
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML); 
+    // }
+    parent.children[1].style.color = 'yellow';
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne)
+    // console.log(dayOne.parentElement) 
+    // we can access parent element of a child using above method
+    console.log("NODES: ",  parent.childNodes)
+    // node list are rendering things behind the browser like what you write in code a line break also count as nodelist  
+</script>
+</html>
