@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const sayHitesh = setTimeout(() => {
+        console.log("Vikas")
+    }, 3000)  // () in parameters it'll calls an api and it have 2 para.. 1st is callback fun.() and 2nd is time in no.'s
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+    const changeMe = setTimeout(changeText, 5000)
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(changeMe)  // it will take reference of settimeout method in () which one you want to stop 
+        console.log("STOPPED")
+    })
+
+</script>
+
+</html>

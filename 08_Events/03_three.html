@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const sayDate = (str)=>{
+        console.log(str,Date.now())
+    }
+
+    let interval;
+    const intervalId = ()=>{interval = setInterval(sayDate,1000,"hi")} // it will run a after a specific time like you take interval and run and it have 3 parameters , 1st is callback function , 2nd is timeinterval, 3rd is parameter for passing into function 
+    const clearInt = ()=> {clearInterval(interval)}
+    let startBut = document.querySelector("#start")
+    let endBut = document.querySelector("#stop")
+    
+    startBut.addEventListener('click',intervalId,false)
+    endBut.addEventListener('click',clearInt,false)
+
+</script>
+</html>
