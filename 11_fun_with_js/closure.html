@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur Chai</title>
+</head>
+
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+
+    // lexical scoping - parental property can be share in there declared functions but can't be use by outer side
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+    // function outer(){
+    //     let username = "vikas"
+    //     console.log(secret)
+    //     function inner(){
+    //         let secret = "My123"
+    //         console.log("inner",username)
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo",username)
+    //         console.log(secret)
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+
+    // console.log("TOO OUTER",username)
+
+
+    // closure - when you return function than its lexical scope will also return
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+    
+    function clickHandler(color){  // in closure , there inner function also can access the value of the parameter
+        // document.body.style.backgroundColor = `${color}`
+        function abc(){
+            document.body.style.backgroundColor = `${color}`
+        }
+        return abc
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange")  
+    document.getElementById('green').onclick = clickHandler("green")
+</script>
+
+</html>
